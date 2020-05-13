@@ -1,6 +1,8 @@
 {
     "require": {
         "smarty/smarty": "dev-trunk",
-        "ezyang/htmlpurifier": "*"
+        "ezyang/htmlpurifier": "*",
+        "vlucas/phpdotenv": "^4.1",
+        "monolog/monolog": "^2.0"
     }
 }
