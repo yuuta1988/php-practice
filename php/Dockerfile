@@ -3,4 +3,6 @@ COPY php.ini /usr/local/etc/php/
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 RUN apt-get update \
     && apt-get install -y libzip-dev zlib1g-dev \
-    && docker-php-ext-install zip
+    && docker-php-ext-install zip \
+    && apt-get install -y vim \
+    && docker-php-ext-install pdo_mysql
